@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>OGMS|Open Geographic Modeling Simulatio</title>
+    <meta name="keywords" content="OGMS,Open,Geographic，Deployment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/fontawesome/font-awesome.css" />
+    <link rel="stylesheet" href="../css/basic/jquery-accordion-menu.css" />
+    <!-- <link rel="stylesheet" href="../css/basic/navbar.css" /> -->
+    <link rel="stylesheet" href="../css/basic/index.css" />
+    <link rel="stylesheet" href="../css/basic/footer.css" />
+    <link rel="stylesheet" href="../css/help/site.css" />
+    <link rel="stylesheet" href="../css/help/normalize.css" />
+    <link rel="stylesheet" href="../css/help/default.css" />
+    <link rel="stylesheet" href="../css/help/help.css" />
+    <link rel="stylesheet" href="../css/help/aboutus.css" />
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="head" class="container-fluid" style="max-width: 100%">
+    <h1>开放式地理建模研究组</h1>
+</div>
+<div id="main" class="container-fluid" style="max-width: 100%">
+    <div class="row" style="margin: 0px">
+        <!--<div class="headImg col-sm-12"></div>-->
+        <div class="member-wrap col-sm-12" style="padding-top: 80px;">
+            <p class="us-title"><b>Group photo</b></p>
+            <div class="col-sm-10  col-sm-offset-1">
+                <img src="../images/aboutUs/Team2.jpg" width="100%" height="400px" />
+            </div>
+        </div>
+        <div class="col-sm-10  col-sm-offset-1" style="height:280px;padding-top: 20px;">
+            <p class="us-title"><b>Team Profile</b></p>
+            <p style="text-indent: 15px"> Carrying out comprehensive research and collaborative exploration is becoming a vital way for current geography research. It is of great importance to integrate various resources to conduct comprehensive simulations and experiments to understand complex geographical phenomena and processes. Aiming at solving complex geographical problems, as well as improving the theories and technologies on open geographical modelling, integration and simulation, we proposed the open framework on 'Scene-based collaboratively geographic modeling”–“Service-oriented distributed resource sharing”–“Process-rooted resource integration and simulation' and corresponding implementation scheme. The open geographic modeling and simulation platform (OpenGMS), which can be employed by multi-discipline users through network to solve complex geographic problems and conduct integrated simulation, is developed accordingly. </p>
+        </div>
+        <div class="col-sm-12 misList">
+            <div class="col-sm-4 col-sm-offset-1 text-center">
+                <img src="../images/aboutUs/mission.png" />
+                <p>Mission</p>
+                <span> Provide a comprehensive geographic problem solving platform that can be used transparently, efficiently and collaboratively </span>
+            </div>
+            <div class="col-sm-3 text-center">
+                <img src="../images/aboutUs/vision.png" />
+                <p>Vision</p>
+                <span> Build an simulation resource integration and reuse community in a open, cooperative and win-win way </span>
+            </div>
+            <div class="col-sm-3 text-center">
+                <img src="../images/aboutUs/goal.png" />
+                <p>Objective</p>
+                <span> Develop open style-based geographic modeling and simulation theories and technologies </span>
+            </div>
+        </div>
+        <div class="member-wrap col-sm-12" style="height: 650px;background: #f0f8fb">
+            <p class="us-title"><b>Team Leaders</b></p>
+            <div class="col-md-2 col-md-offset-2 col-sm-3 col-sm-offset-1" style="padding: 0">
+                <div class="leader-desc">
+                    <div class="top text-center">
+                        <span class="name">Guonian L&uuml;</span>
+                        <span class="tit">Professor</span>
+                    </div>
+                    <div class="img-bg">
+                        <img src="../images/aboutUs/lv.jpg" class="img-circle" width="150px" />
+                    </div>
+                    <div class="con">
+                        <b>Academic Title:</b>
+                        <br />
+                        <p> * Director of MOE Key Laboratory of Virtual Geographical Environment.<br /> * Director of Key Laboratory of Geographic Information Science in Jiangsu Province.<br /> * Deputy director of Chinese academic committee of Geographical society.<br /> </p>
+                        <button class="btn btn-primary btn-block" onclick="window.open('http://schools.njnu.edu.cn/geog/person/guonian-lu')">more</button>
+                        <!--<button type="button" href="http://schools.njnu.edu.cn/geog/person/guonian-lu">more</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1" style="padding: 0">
+                <div class="leader-desc">
+                    <div class="top text-center">
+                        <span class="name">Min Chen</span>
+                        <span class="tit">Professor</span>
+                    </div>
+                    <div class="img-bg">
+                        <img src="../images/aboutUs/chenmin.png" class="img-circle" width="150px" />
+                    </div>
+                    <div class="con">
+                        <b>Academic Title:</b>
+                        <br />
+                        <p> * PI of Thousand Talents program for Young Scholars of China (Funded as the highest level)<br /> * PI of NSF for Excellent Young Scholars of China 'Geographic Modelling and Simulation'.<br /> * Distinguished Professor of Jiangsu Province, China<br /> </p>
+                        <button class="btn btn-primary btn-block" onclick="window.open('http://schools.njnu.edu.cn/geog/person/min-chen')">more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1" style="padding: 0">
+                <div class="leader-desc">
+                    <div class="top text-center">
+                        <span class="name">Yongning Wen</span>
+                        <span class="tit">Associate professor</span>
+                    </div>
+                    <div class="img-bg">
+                        <img src="../images/aboutUs/wenyongning.jpg" class="img-circle" width="150px" />
+                    </div>
+                    <div class="con">
+                        <div>
+                            <b>Academic Title:</b>
+                            <br />
+                            <p> * Winer of Youth remote sensing and geographic information science and Technology Award, Jiangsu Province, 2014<br /> * Winer of “enterprise doctor accumulation plan' of Jiangsu province,2011<br /> </p>
+                            <button class="btn btn-primary btn-block" onclick="window.open('http://schools.njnu.edu.cn/geog/person/yongning-wen')">more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 misList" style="background: #ffffff">
+        <p class="us-title"><b>Team Members</b></p>
+        <div class="col-md-10 col-md-offset-1 col-sm-12">
+            <div id="single-quad" class="carousel slide" data-shift="1">
+                <div class="carousel-inner">
+                    <ul class="row item active">
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/yss.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Songshan Yue</h3>
+                                    <h5>Post-doctoral</h5>
+                                    <p> <b>Bio:</b><br /> Graduated from School of Geography Science of Nanjing Normal University. Currently employed to engage in postdoctoral research in the the Key Laboratory of Virtual Geographic Enviroment.<br /> <b> Interest areas:</b><br /> Sharing and Integration of Geographic model, VGE and Urban GIS. </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/wj.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <!--<h3>Fuqiang Lu</h3>-->
+                                    <h3>Jin Wang</h3>
+                                    <h5>Ph.D Student</h5>
+                                    <p> 17th<br />
+                                        <!--He is a 11 doctoral candidate of the school of geography and a member of the Communist Party of china.-->
+                                        <!--His main research hobbies: fluid mechanics, differential equation numerical solution method and scatter-->
+                                        <!--interpolation method.</br>--> <b>interest areas:</b><br /> Geographic Scene Modeling &amp; Simulation<br /> Geographic Model Sharing &amp; Integrated<br /> 3D GIS<br /> <b>Undertaking tasks:</b><br /> develop the Data Service Container<br /> develop the data visualization packages </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/zfy.png" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Fengyuan Zhang</h3>
+                                    <h5>Ph.D Student</h5>
+                                    <p> 17th<br /> <b>Interest Areas:</b><br /> Geo-Modeling Service in Different Environment, Models Security and Monitoring, Model Behavior Operation<br /> <b>Undertaking tasks:</b><br /> Geo-model Services and Running Environment </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                    </ul>
+                    <ul class="row item">
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/zcc.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Chuanchuan Zhu</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 15th<br /> <b>interest areas：</b><br /> Geo-science Modeling,Numerical Simulation Analysis,Web Development<br /> <b>Undertaking tasks:</b><br /> Web Architecture Geo-Science Modeling </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/tyf.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Yufeng Tan</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 15th<br /> <b>interest areas: </b><br /> cloud computing and big data <b>undertaking tasks:</b><br /> Geographic model sharing and integration in Linux </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/ldy.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Danyang Liu</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 15th<br /> <b>Interest Areas:</b><br /> Digital terrian analysis<br /> <b>Undertaking tasks:</b><br /> Detection of lunar impact crater<br /> </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                    </ul>
+                    <ul class="row item">
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/ck.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Kun Chen</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 16th<br /> <b>Interest areas:</b><br /> Naked eye 3D <br /> <b>Undertaking tasks:</b><br /> Data refactor and mapping &nbsp;&nbsp;&nbsp;&nbsp; </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/ht.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Tao Hou</h3>
+                                    <h5>Master Student</h5>
+                                    <p> <br /> 16th<br /> <b>Interest areas:</b><br /> Html5, JavaScript， Basketball <br /> <b>Undertaking tasks:</b><br /> Portal Design and Implementation </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/scr.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Chaoran Shen</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 16th<br /> <b>Interest areas:</b><br /> Image process, Web development, Rock music<br /> <b>Undertaking tasks:</b><br /> SAGA GIS model packing, Part work of model service container, Simple visualization of UDX, Enviroment dictionary and enviroment match when deploying, Model service and data service integration base on data driver. </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                    </ul>
+                    <ul class="row item">
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/zbw.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Bowen Zhang</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 16th<br /> <b>Interest Areas:</b><br /> Muti-source analysis of big data and back-end technology<br /> <b>Undertaking tasks:</b><br /> Developing desktop software of open geographic modelling system， integrating model，data， server resource to provide a model building system in open web environment. </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/wm.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Ming Wang</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 17th<br /> <b>Interest areas: </b><br /> Data Visualization and Augmented Reality <b>Undertaking tasks:</b> Data Visualization and model Packaging </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/xdw.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Dawei Xiao</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 17th <br /> <b>Interest areas: </b><br /> front-end and back-end development.<br /> <b>Undertaking tasks:</b><br /> Hydrologic model packaging </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                    </ul>
+                    <ul class="row item">
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/lyc.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Yuchen Lu</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 17th<br /> <b>Interest areas: </b> Data Visualization and Big Data <br /> <b>Undertaking tasks:</b><br /> The modules of Conceptual Models Building </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/slz.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Lingzhi Sun</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 17th<br /> <b>Interest areas:</b><br /> Food Appreciation<br /> <b>Undertaking tasks:</b><br /> Data Sources/Mapping Methods/Reconstruction methods related work<br /> </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                        <li class="col-xs-4">
+                            <div class="single-member effect">
+                                <div class="member-image">
+                                    <img src="../images/aboutUs/wls.jpg" alt="Member" />
+                                </div>
+                                <div class="member-info">
+                                    <h3>Lingshan Wang</h3>
+                                    <h5>Master Student</h5>
+                                    <p> 17th<br /> <b>Interest Area:</b><br /> Front-end development<br /> <b>Undertaking tasks:</b><br /> Display of geographic models </p>
+                                    <div class="social-touch">
+                                        <a style="color: #FFFFFF">Nanjing Normal University</a>
+                                    </div>
+                                </div>
+                            </div> </li>
+                    </ul>
+                </div>
+                <a class="carousel-control left" href="#single-quad" data-slide="prev">Previous</a>
+                <a class="carousel-control right" href="#single-quad" data-slide="next">Next</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 News" style="padding-top: 20px">
+        <p class="us-title"><b>Team information </b></p>
+        <div class="col-md-6" style="padding-left: 100px;padding-top:20px;padding-right: 50px;">
+            <div class="panel panel-default" id="Articles">
+                <div class="panel-heading" style="height:60px">
+                    <b id="Essays" style="font-size: 30px">Articles</b>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="demo1">
+
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%"><mark>Virtual Geographic Environments (VGEs) A New Generation of Geographic Analysis Tool</mark></td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Virtual%20Geographic%20Environments%20(VGEs)%20A%20New%20Generation%20of%20Geographic%20Analysis%20Tool.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%"><mark>Virtual Geographic Environment</mark></td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Virtual%20Geographic%20Environment(For%20read).pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%"><mark>Virtual Geographic Environment A Workspace for Computer-Aided Geographic Experiments</mark></td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Virtual%20Geographic%20Environment%20A%20Workspace%20for%20Computer-Aided%20Geographic%20Experiments.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Studying on distributed sharing of geographical analysis model</td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Studying%20on%20distributed%20sharing%20of%20geographical%20analysis%20model.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">STUDY ON THE MODELLING OF GEOGRAPHIC CONCEPTUAL SCENARIO BASED</td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/STUDY%20ON%20THE%20MODELLING%20OF%20GEOGRAPHIC%20CONCEPTUAL%20SCENARIO%20BASED.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Real-geographic-scenario-based virtual social
+                                                environments: integrating geography with social
+                                                research</td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Real-geographic-scenario-based%20virtual%20social(New).pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">A visualization method for geographic conceptual</td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/A%20visualization%20method%20for%20geographic%20conceptual.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Service-oriented model-encapsulation strategy for sharing and integrating heterogeneous </td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-06-25<br /> <a href="../../assets/document/Service-oriented%20model-encapsulation%20strategy.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Prototyping an open environment for sharing geographical analysis models on cloud </td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-06-25<br /> <a href="../../assets/document/Prototyping%20an%20open%20environment%20for.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">A model service deployment strategy for collaboratively sharing geo analysis models </td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-06-25<br /> <a href="../../assets/document/A%20model%20service%20deployment%20strategy%20for%20collaboratively%20sharing%20geo%20analysis%20models%20in%20an%20open%20web%20environment.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">A function-based linear map symbol building and rendering method using shader language</td>
+                                            <td style="margin-right:10px ;text-align: right" class="time"> 2017-06-25<br /> <a href="../../assets/document/A%20function-based%20linear%20map%20symbol%20building%20and%20rendering%20method%20using%20shader%20language.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">A data description model for reusing, sharing and integrating geo-analysis models </td>
+                                            <td style="margin-right:10px ;text-align: right" class="time"> 2017-06-25<br /> <a href="../../assets/document/A%20data%20description%20model%20for%20reusing,%20sharing%20and%20integrating%20geo-analysis%20models.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" style="padding-right: 100px;padding-top:20px;padding-left: 50px;">
+            <div class="panel panel-default" id="New-Events">
+                <div class="panel-heading" style="height:60px">
+                    <b id="News" style="font-size: 30px;margin-bottom: 8px ">News</b>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="demo2">
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%"><mark>Academic report ：Geographic Knowledge for Territorial Intelligence and Smart Cities"</mark></td>
+                                            <td style="margin-right:10px ;text-align: right" >2017-11-11<br /><a href="../../assets/document/Robert.htm" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%"><mark>Meeting: "The Sixth National Virtual Environment Conference"</mark></td>
+                                            <td style="margin-right:10px ;text-align: right" >2017-11-09<br /><a href="../../assets/document/第六届全国虚拟地理环境会议.htm" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%"><mark>Lecture: "New Tools for Understanding and Planningthe Smart City"</mark></td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-09-25<br /> <a href="../../assets/document/MechaelBatty.htm" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Recruitment information: team recruitment postdoctoral</td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-08-25<br /> <a href="../../assets/document/团队招聘博士后.htm" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Meeting：'International Workshop on Open Geographical Modeling and Simulation'</td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-08-20<br /> <a href="http://schools.njnu.edu.cn/geog/academic-events/our-school-has-successfully-held-the-international-workshop-on-open-geographical" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Lecture: Study on the Uncertainty of Climate Change Detection Using Surface Solar Radiation and Temperature Observations </td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-07-26<br /> <a href="../../assets/document/王开存.htm" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Lecture：Visual Analytics for Urban Trajectory Data</td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-07-26<br /> <a href="../../assets/document/叶信岳.htm" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Lecture：Support Community-Scale Intervention Initiatives by Visually Mining Social Media Trajectory </td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-07-24<br /> <a href="../../assets/document/叶信岳.htm" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Lecture: Research Status and Development of Ecosystem Model </td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-06-23<br> <a href="../../assets/document/袁文平.htm" target="_blank">Read more</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Lecture: big data space and human activities </td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-06-22<br /> <a href="../../assets/document/黄波.htm" target="_blank">Read more</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Lecture：“Why Is Euclidean Geometric Thinking <br>So Wrong for Maps and Mapping in the Era of BIG Data?” </td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-06-20<br /> <a href="../../assets/document/江斌.htm" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px;padding: 0">
+                                        <tbody>
+                                        <tr class="eve">
+                                            <td style="width:75%">Lecture：Land Surface Modeling: Past, Present and Future</td>
+                                            <td style="margin-right:10px ;text-align: right" class="events_time">2017-06-14<br /> <a href="../../assets/document/杨宗良.htm" target="_blank">Read more</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12" style="padding-left: 100px;padding-top:20px;padding-right: 50px;">
+            <div class="panel panel-default" id="Articles">
+                <div class="panel-heading" style="height:60px">
+                    <b id="Honors" style="font-size: 30px">Team Honors</b>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="demo1">
+
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%"><mark>Virtual Geographic Environments (VGEs) A New Generation of Geographic Analysis Tool</mark></td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Virtual%20Geographic%20Environments%20(VGEs)%20A%20New%20Generation%20of%20Geographic%20Analysis%20Tool.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%"><mark>Virtual Geographic Environment</mark></td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Virtual%20Geographic%20Environment(For%20read).pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%"><mark>Virtual Geographic Environment A Workspace for Computer-Aided Geographic Experiments</mark></td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Virtual%20Geographic%20Environment%20A%20Workspace%20for%20Computer-Aided%20Geographic%20Experiments.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Studying on distributed sharing of geographical analysis model</td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Studying%20on%20distributed%20sharing%20of%20geographical%20analysis%20model.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">STUDY ON THE MODELLING OF GEOGRAPHIC CONCEPTUAL SCENARIO BASED</td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/STUDY%20ON%20THE%20MODELLING%20OF%20GEOGRAPHIC%20CONCEPTUAL%20SCENARIO%20BASED.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Real-geographic-scenario-based virtual social
+                                                environments: integrating geography with social
+                                                research</td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/Real-geographic-scenario-based%20virtual%20social(New).pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">A visualization method for geographic conceptual</td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-08-25<br /> <a href="../../assets/document/A%20visualization%20method%20for%20geographic%20conceptual.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Service-oriented model-encapsulation strategy for sharing and integrating heterogeneous </td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-06-25<br /> <a href="../../assets/document/Service-oriented%20model-encapsulation%20strategy.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">Prototyping an open environment for sharing geographical analysis models on cloud </td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-06-25<br /> <a href="../../assets/document/Prototyping%20an%20open%20environment%20for.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">A model service deployment strategy for collaboratively sharing geo analysis models </td>
+                                            <td style="margin-right:10px ;text-align: right" class="article_time"> 2017-06-25<br /> <a href="../../assets/document/A%20model%20service%20deployment%20strategy%20for%20collaboratively%20sharing%20geo%20analysis%20models%20in%20an%20open%20web%20environment.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">A function-based linear map symbol building and rendering method using shader language</td>
+                                            <td style="margin-right:10px ;text-align: right" class="time"> 2017-06-25<br /> <a href="../../assets/document/A%20function-based%20linear%20map%20symbol%20building%20and%20rendering%20method%20using%20shader%20language.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                                <li class="news-item">
+                                    <table cellpadding="4" class="table" style="margin-bottom: 0px">
+
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:75%">A data description model for reusing, sharing and integrating geo-analysis models </td>
+                                            <td style="margin-right:10px ;text-align: right" class="time"> 2017-06-25<br /> <a href="../../assets/document/A%20data%20description%20model%20for%20reusing,%20sharing%20and%20integrating%20geo-analysis%20models.pdf" target="_blank">Read More</a> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+    <div class="col-sm-12" id="amap" style="height: 500px">
+    </div>
+    <div class="member-wrap col-sm-12" style="margin-top: -200px;height: 200px;background-color: rgba(0, 0, 0,0.6);z-index: 1000">
+        <p class="us-title"><b style="color: #FFFFFF">Contact Us</b></p>
+        <div class="content text-center">
+            <p style="color: #FFFFFF"><i class="fa fa-map-marker"></i> Address：Institute of Geographical Sciences, Nanjing Normal University, Qixia District, Nanjing</p>
+            <p style="color: #FFFFFF"><i class="fa fa fa-envelope"></i> Email：nj_gis@163.com</p>
+        </div>
+    </div>
+</div>
+<!--footer start-->
+<div class="footer">
+    <div class="container">
+        <p class="col-sm-12 text-center">Copyright &copy; 2017 Nanjing Normal University 备案号：nanjing 技术支持： <a style="color:#08c" target="_blank" href="../help/aboutus.html"> 506 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255320067'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1255320067%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> </a> <a href="javascript:scroll(0,0)" title="回到顶部" class="hidden-sm" style="display: inherit!important;"> <span class="am-gotop-title">回到顶部</span> <i class="glyphicon glyphicon-chevron-up"></i> </a> </p>
+    </div>
+</div>
+<!--footer en-->
+<script type="text/javascript" src="../js/jquery/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/bootstrap/bootstrap.js"></script>
+<script src="../js/jquery/jquery-accordion-menu.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&amp;key=5f2c60f4652c4ee059e31e0342435787"></script>
+<script type="text/javascript" src="../js/jquery/jquery.bootstrap.newsbox.js"></script>
+<script>
+    var map = new AMap.Map('amap',{
+        resizeEnable: true,
+        zoomEnable:false,
+        zoom: 15,
+        center: [118.915857,32.114962]
+    });
+    var marker = new AMap.Marker({
+        position: [118.915857,32.114962],//marker所在的位置
+    });
+    marker.setMap(map);
+</script>
+<script type="text/javascript">
+    var carousels = $('.carousel');
+    carousels.carousel({
+        pause: "hover",
+        interval: 3000
+    });
+    carousels.each(function() {
+        var $obj = $(this);
+        var $inner = $obj.find('.carousel-inner');
+
+        var id = 'uuid' + new Date().getTime();
+        $obj.addClass(id);
+
+        if ($obj.data('shift') === 1) {
+            var items = $obj.find('.item > [class*="col-"]'),
+                visibleCnt = $obj.find('.item:first [class*="col-"]').length,
+                wrapper = "";
+
+            // build styles
+            var rule_base = '.carousel.' + id + ' .carousel-inner > .item',
+                styles = $('<style></style>'),
+                rules = [];
+            rules[0] = rule_base + '.next {left: ' + (100 / visibleCnt) + '%; transform: none;}';
+            rules[1] = rule_base + '.active {left: 0;}';
+            rules[2] = rule_base + '.active.left {left: -' + (100 / visibleCnt) + '%; transform: none;}';
+            rules[3] = rule_base + '.next.left {left: 0;}';
+            rules[4] = rule_base + '.active.right {left: ' + (100 / visibleCnt) + '%; transform: none;}';
+            rules[5] = rule_base + '.prev.right {left: 0;}';
+            rules[6] = rule_base + '.prev {left: -' + (100 / visibleCnt) + '%; transform: none;}';
+            for (var i = 0; i < rules.length; i++) {
+                styles.append(rules[i]);
+            }
+            $obj.prepend(styles);
+
+            // rebuild items
+            for (var i = 0; i < $(items).length; i++) {
+                var $item = $(items[i]);
+                var parent = $item.parent();
+                if (parent.hasClass('item')) {
+                    if (!wrapper.length) {
+                        wrapper = parent.clone().removeClass('active').html('');
+                    }
+                    $item.unwrap();
+                }
+
+                var itemGroup = [$item];
+                for (var x = 1; x < visibleCnt; x++) {
+                    var a = i + x;
+                    var next = $(items[a]);
+                    if (!next.length) {
+                        next = $(items[(a - $(items).length)]);
+                    }
+                    itemGroup[x] = next.clone();
+                }
+                var newSet = wrapper.clone().html(itemGroup);
+                if (i == 0) {
+                    newSet.addClass('active');
+                }
+                newSet.appendTo($inner);
+            }
+        }
+    });
+</script>
+<script>
+    $(function () {
+        $(".demo1").bootstrapNews({
+            newsPerPage: 5,
+            autoplay: true,
+            pauseOnHover:true,
+            direction: 'up',
+            newsTickerInterval: 3000,
+            onToDo: function () {
+                //console.log(this);
+            }
+        });
+    });
+    $(function () {
+        $(".demo2").bootstrapNews({
+            newsPerPage:5,
+            autoplay: true,
+            pauseOnHover:true,
+            direction: 'up',
+            newsTickerInterval: 3000,
+            onToDo: function () {
+                //console.log(this);
+            }
+        });
+    });
+</script>
+</body>
+</html>
