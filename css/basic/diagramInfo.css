@@ -1,0 +1,159 @@
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+    margin:0;
+}
+.diagramContainer,.siderbarContainer,.geFooterContainer{
+    position: absolute;
+    cursor: default;
+}
+.diagramContainer{
+    font-size: 14px;
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-width: 1px 0px 0px 1px;
+    outline: none;
+    left: 0px;
+    right: 285px;
+    top: 60px;
+    bottom: 27px;
+    touch-action: none;
+    overflow: hidden;
+}
+.siderbarContainer{
+    z-index: 1;
+    overflow: hidden;
+    font-size: 14px;
+    top: 60px;
+    right: 0px;
+    bottom: 27px;
+    width: 285px;
+}
+.siderbarContainer:hover{
+    overflow-y: auto;
+}
+
+.geFooterContainer{
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10004;
+    height: 28px;
+    background:#e5e5e5;
+    border-top:1px solid #c0c0c0;
+    overflow:hidden;
+}
+.geFooterContainer p {
+    font-size:14px;
+    line-height: 28px;
+    color:#333;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+#eventList{
+    height: 330px;
+    overflow-y: auto;
+    margin-top: 2%;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+.relateCmPanel div a:hover{
+    cursor: pointer;
+    color: #235695;
+}
+
+#myTabContent .form-control{
+    border-radius: 0px;
+}
+
+#eventUL{
+    list-style: none;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 240px;
+    overflow-y: auto;
+}
+#eventUL li{
+    padding-left: 5px;
+    cursor: pointer;
+}
+.eventListSelect{
+    background-color: #d8d8d8;
+}
+#InputDataTree,#InputDataPanel{
+    border: 1px solid #e8e8e8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    min-height: 242px;
+    max-height: 242px;
+    overflow-y: auto;
+}
+#modelItemInfoPanel{
+    padding-top: 10px;
+    border-top: 2px grey solid;
+}
+#BasicInfo,#stateInfo {
+    height: 550px;
+}
+#BasicInfo label,#stateInfo label{
+    margin-left: 10px;
+}
+.form-control{
+    background-color: #FFFFFF!important;
+}
+.input-group-addon{
+    min-width: 65px;
+}
+
+#webDataTree,#newDataTree{
+    max-height: 220px;
+    overflow-y: hidden;
+}
+#webDataTree:hover,#newDataTree:hover{
+    overflow-y: auto;
+}
+#webDataInfoDivPanel,#newDataInfoDivPanel{
+    max-height: 220px;
+    overflow-y: hidden;
+}
+#webDataInfoDivPanel:hover,#newDataInfoDivPanel:hover{
+    overflow-y: auto;
+}
+#EventPanel .modal-body div{
+    margin-bottom: 10px;
+}
+#EventPanel #eventBasicInfo p{
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    border-left: 2px solid #00c1de;
+}
+#EventPanel #eventBasicInfo span{
+    word-wrap:break-word;
+    border-left: 2px solid #00c1de;
+}
+
+.dataNodeSelect{
+    background-color: #CCCCCC;
+}
+
+@media (max-width: 1000px){
+    .diagramContainer,.siderbarContainer {
+        top: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    .diagramContainer,.siderbarContainer {
+        top: 60px;
+    }
+}

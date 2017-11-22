@@ -1,0 +1,96 @@
+body{
+    background: #fff;
+    overflow-x: hidden;
+}
+.row{
+    border: 1px solid #d8d8d8;
+    box-shadow: 10px 10px #e8e8e8;
+    border-radius: 4px;
+}
+.modal .row{
+    border: none;
+    box-shadow: none;
+}
+#main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.modelItemInfoPanel{
+    margin-bottom: 5px;
+}
+
+.modelItemInfoPanel .flexPanel{
+    display: inline-flex;
+    width: 100%
+}
+.modelItemInfoPanel .input-group-addon{
+    min-width: 100px;
+}
+
+#tree,#RepositoryParentsPanel,#tagsPanel,#TagParentsPanel,#seeAlsoPanel,#referencePanel,#diagramPanel,#diagramTree{
+    height: 305px;
+    max-height: 305px;
+    overflow-y: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#tree,#diagramTree{
+    width: 30%;
+}
+
+#RepositoryParentsPanel,#diagramPanel{
+    width: 70%;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+
+#tagsPanel,#TagParentsPanel,#seeAlsoPanel,#referencePanel{
+    width: 50%;
+}
+#tagsPanel{
+    border: none!important;
+}
+#TagParentsPanel,.seeAlsoInfo,.referenceInfo{
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+
+.unitDimensionPanel{
+    display: inline-flex;
+    width: 100%;
+    margin-top: 5px;
+}
+.dimensionPanel{
+    height: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.unitInfoPanel .nav-tabs,.dimensionInfoPanel .nav-tabs{
+    margin-top: 10px;
+}
+
+.unitInfoPanel .tab-pane .input-group,.dimensionInfoPanel .tab-pane .input-group{
+    margin-top: 5px;
+}
+
+.tab-pane .input-group .input-group-addon{
+    min-width: 140px;
+}
+
+@media (max-width: 1000px){
+    #main{
+        padding-top: 10px;
+    }
+    .container {
+        width: 100%!important;
+    }
+}
+
+@media (max-width: 767px){
+    #main{
+        padding-top: 20px;
+    }
+}
